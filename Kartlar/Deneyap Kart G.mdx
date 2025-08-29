@@ -1,0 +1,75 @@
+---
+title: "Deneyap Kart G"
+---
+
+## Genel Bilgiler
+
+- Deneyap Kart G, dikilebilir pedleri ile giyilebilir teknolojilere özel elektronik geliştirme kartıdır. Orjinal ESP32-C3 bütünleşik mikroişlemcisi kullanılarak geliştirilmiştir.
+- Dahili Wi-Fi ve Bluetooth haberleşme özellikleri sayesinde, nesnelerin interneti ve bulut tabanlı projeler hazırlamanızda sizlere imkan sağlayacaktır. Kullanılan cihaz özelinde bluetooth kütüphanesi kullanılmalıdır. [Bluetooth örnekleri için tıklayınız.](https://github.com/deneyapkart/deneyapkart-arduino-core/tree/master/libraries/Deneyap/examples/BLE) Deneyap Kart, Deneyap Kart1A, Deneyap Kart 1Av2 ve Deneyap Kart G karlarında ve Android, Apple ve Windows cihazlarında Deneyap Kart'ları bluetooth klavye olarak kullanabilirsiniz. [Örnek proje için tıklayınız.](https://deneyapkart.org/projeler/bluetooth-klavye-2)
+- Deneyap Kart G’yi bir sunucu olarak kullanarak kapalı çevrim bir kablosuz haberleşme ağı kurabilirsiniz. 
+- ADC, USB OTG, PWM, SPI, UART, I2S, I2C, TWAI, GDMA, JTAG ve IR gibi zengin çevresel bağlantı yelpazesine sahiptir. Ayrıca size esneklik sağlamak amacıyla, bu bağlantı arayüzlerinden bir kısmı ihtiyacınıza göre istediğiniz herhangi bir pinden kullanılabilmektedir.
+- Mikroişlemciye entegre dahili sıcaklık algılayıcısı ile –40 °C ile +125 °C aralığında cihaz sıcaklığını takip edebilirsiniz.
+- I2C haberleşme konnektörünü kullanarak kablo bağlantısı ve lehimleme yapmadan algılayıcı ve eyleyici birimlerden oluşan sisteminizi hızlı bir şekilde hayata geçirebilirsiniz.
+- Sisteminize güvenilir bir şekilde güç vermenize yardımcı olmak için özel bir Li-Po bağlantı konnektörü bulunmaktadır. Dahası bataryadan gelen gerilimi açıp kapatmak için bir anahtara sahiptir.
+- Ayrıca, 2 adet buton ve 1 adet adreslenebilir RGB LED dahili olarak bulunmaktadır. 
+- Genel amaçlı olarak kullanılabilen 13 adet pine sahiptir.
+- Deneyap Kart G, 6 adet sinyal ve 5 adet gerilim olmak üzere toplam 11 adet dikilebilir pede sahiptir.
+- Devre tahtası (breadboard) ile uyumlu bir tasarıma sahiptir.
+- Arduino IDE ile uyumludur. Yönergeleri kullanarak kodlamaya başlayabilirsiniz.
+
+<Frame caption="Deneyap Kart G Pin Diyagramı">
+    <img classname="rounded-lg" src="/images/G-Pin-Diyagramı.png" />
+</Frame>
+
+## Teknik Özellikler
+
+- 160 MHz Tek Çekirdek 32-bit RISC-V Mikroişlemci
+- 4 MB SPI Flash
+- 400 KB SRAM
+- 384 KB ROM
+- 2.4 GHz Wi-Fi – 802.11b/g/n
+- Bluetooth 5 (LE) ve Bluetooth mesh
+- Dahili PCB Anten
+- Dahili Sıcaklık Algılayıcı
+- Adreslenebilir RGB LED (Pin: D3)
+- Genel Amaçlı Buton (Pin: D2)
+- Tip C USB Konektör
+- I2C Haberleşme Konektörü
+- Li-Po Batarya Konektörü
+- Açma Kapama Anahtarı
+- 13 x Dijital Giriş/Çıkış Pini
+- 6 x Analog Giriş Pini (12-bit ADC)
+- Tüm Dijital Giriş/Çıkış Pinleri PWM, I2C, SPI, UART, I2S, TWAI ve IR Destekler
+- 11 x Dikilebilir Sinyal ve Güç Pedi
+- 3.3V Çalışma Gerilimi
+- 3.3V Çıkış Gerilimi
+- 3.3V – 5.5V Giriş Gerilimi
+- 50.00mm x 43.30mm x 7.25mm
+- 6 gr (pinler takılı değil)
+
+
+## Dokümanlar
+
+<table>
+  <caption><strong>Kaynaklar</strong></caption>
+  <tr>
+    <td>
+      <ul>
+        <li><a href="https://raw.githubusercontent.com/deneyapkart/deneyapkart-arduino-core/master/docs/DeneyapKartG_GenisletilmisPinDiyagrami_mpv1.0.png">Pin Diyagramı</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/ByGjEO7VgjTNHEsaeF1umeH4N3ke5ZDZ.pdf">Teknik Resim</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-arduino-core">Github Arduino Kütüphanesi</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/JcqTGfsQPz81f062ERgjOWccPdVYrbhu.step">3B Model (.step)</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/8F8bEO0ZZ3ITnoq5fpdfOo274HaFWRnO.STL">3B Model (.stl)</a></li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><a href="https://github.com/deneyapkart/fritzing-parts/raw/master/DeneyapKartG.fzpz">Fritzing (.fzpz)</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/VIoDdrtqac0jfPNhCZuvTRVTxS43vYm1.PDF">Şematik</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media-v2/cke-uploads/2024/05/30/dyg_detaylpinozellikleritablosu.pdf">Detaylı Pin Özellikleri</a></li>
+        <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf">ESP32-C3 Datasheet</a></li>
+        <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf">ESP32-C3 Teknik Rehber</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>

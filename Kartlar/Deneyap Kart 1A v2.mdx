@@ -1,0 +1,90 @@
+---
+title: "Deneyap Kart 1A v2"
+---
+
+## Genel Bilgiler 
+
+- Deneyap ailesinin en güçlü elektronik geliştirme kartı, ESP32-S3-WROOM-1 modülü kullanılarak geliştirilmiştir.
+- Yeni nesil güçlü çift çekirdek Xtensa LX7 mikroişlemcisi ile makine öğrenmesi ve yapay zeka tabanlı projelere Tensorflow Lite ile başlayabilirsiniz.
+- Dahili Wi-Fi ve Bluetooth haberleşme özellikleri sayesinde, nesnelerin interneti ve bulut tabanlı projeler hazırlamanızda sizlere imkan sağlayacaktır. Kullanılan cihaz özelinde bluetooth kütüphanesi kullanılmalıdır. [Bluetooth örnekleri için tıklayınız.](https://github.com/deneyapkart/deneyapkart-arduino-core/tree/master/libraries/Deneyap/examples/BLE) Deneyap Kart, Deneyap Kart1A, Deneyap Kart 1Av2 ve Deneyap Kart G karlarında ve Android, Apple ve Windows cihazlarında Deneyap Kart'ları bluetooth klavye olarak kullanabilirsiniz. [Örnek proje için tıklayınız.](https://deneyapkart.org/projeler/bluetooth-klavye-2)
+- Wi-Fi haberleşme özelliğini kullanarak sisteminiz ile bulut tabanlı uygulamanız arasında veri alışverişi gerçekleştirebilirsiniz. Bunun yanı sıra kartınızı bir sunucu olarak kullanabilir ve bu sayede kendi kapalı çevrim kablosuz haberleşme ağınızı kurabilirsiniz.
+- ADC, PWM, UART, SPI, I2C, TWAI, I2S, Kapasitif Algılama, LCD, DVP, RMT, SD/SDIO/MMC, JTAG, Timer, darbe sayıcı ve harici kesme gibi zengin çevresel bağlantı yelpazesine sahiptir. Ayrıca size esneklik sağlamak amacıyla, bu bağlantı arayüzlerinden bir kısmı ihtiyacınıza göre istediğiniz herhangi bir pinden kullanılabilmektedir.
+- Mikroişlemciye entegre dahili sıcaklık ölçer bulunur.
+- Genel amaçlı olarak kullanılabilen 23 adet pine sahiptir.
+- Sisteminize güvenilir bir şekilde güç vermenize yardımcı olmak için özel bir Li-Po bağlantı konnektörü bulunmaktadır. Dahası bu bağlantı konnektörünü kullanarak Li-Po bataryanızı şarj edebilirsiniz. Ayrıca bağlı olan bataryanın doluluğunu takip edebilirsiniz.
+- Kartın arka tarafında mikro SD kart konnektörü ve Deneyap Kamera’yı bağlayabileceğiniz FPC kamera konnektörü vardır.
+- Ayrıca 2 adet buton ve 1 adet adreslenebilir RGB LED dahili olarak bulunmaktadır.
+- I2C haberleşme konnektörünü kullanarak kablo bağlantısı ve lehimleme yapmadan algılayıcı ve eyleyici birimlerden oluşan sisteminizi hızlı bir şekilde hayata geçirebilirsiniz.
+- Kartınızdan kesintisiz olarak harici bağlantı sağlayacağınız çevre birimlerde kullanmak için 3.3V ve 5V gerilime sahip çıkış alabilirsiniz. Sisteminizi Li-Po batarya ile beslerken dahi 5V gerilime sahip güç çıkışı her zaman sizinle olacaktır.
+- Deneyap Kart 1A v2 devre tahtası (breadboard) ile uyumlu bir tasarıma sahiptir. Hemen geliştirmeye başlamanız için pinleri sizin için lehimlendi.
+- Deneyap Kart 1A v2, Arduino IDE ile uyumludur. Yönergeleri kullanarak kodlamaya başlayabilirsiniz.
+- Deneyap Kart 1A v2'nin yeni nesil LX7 işlemcisinin sahip olduğu yapay zeka (AI) hızlandırıcısı ile sinyal işleme ve makine öğrenmesi performansı ilk versiyona göre güçlendirilmiştir. 
+- Deneyap Kart 1A v2 Bluetooth 4.2 versiyonu yerine Bluetooth 5 versiyonuna sahiptir; bu sayede Coded PHY olarak adlandırılan uzun menzil (1 km ve üzeri) Bluetooth haberleşmesi ile veri alışverişi sağlayabilir.
+- Deneyap Kart 1A v2'nin flash ve RAM kapasitesi istenirse 1GB'a kadar artırılabilir.
+- İlk versiyon Deneyap Kart 1A'da manyetik alan (hall) algılayıcısı bulunurken yeni versiyonda dahili sıcaklık ölçer bulunmaktadır.
+
+
+## Teknik Özellikler
+
+- 240 MHz Çift Çekirdek Tensilica LX7 Mikroişlemci
+- 512 KB SRAM
+- 384 KB ROM
+- 8 MB Octal SPI PSRAM
+- 4 MB Quad SPI Flash
+- 2.4 GHz Wi-Fi – 802.11b/g/n
+- Bluetooth LE (5 ve Mesh)
+- Dahili PCB Anten
+- Dahili Sıcaklık Ölçer
+- Adreslenebilir RGB LED (Pin: D9)
+- SD Kart (Pinler: D16, D17, D18 ve D19)
+- Genel Amaçlı Buton (Pin: D15)
+- Batarya Gerilim Algılayıcı (Pin: A8)
+- Li-Po Batarya Şarjı
+- Li-Po Batarya Konnektörü
+- Tip-C USB Konnektör
+- I2C Haberleşme Konnektörü
+- 23 x Dijital Giriş/Çıkış Pini
+- 13 x Analog Giriş Pini (12-bit ADC)
+- 9 x Kapasitif Algılama Pini
+- Tüm Dijital Giriş Pinleri PWM, UART, SPI, I2C, TWAI, I2S, LCD, DVP, RMT, SD/SDIO/MMC, Darbe Sayıcı ve Harici Kesmeyi Destekler
+- 3.3V Çalışma Gerilimi
+- 3.3V ve 5V Çıkış Gerilimi
+- 3.3V – 5.5V Giriş Gerilimi
+- 63.50mm x 25.4mm x 15.70mm
+- 11 gr (pinler lehimli)
+
+
+<Frame caption="Deneyap Kart 1A v2 Pin Diyagramı" >
+    <img classname="rounded-lg" src="/images/1Av2-Pin-Diyagramı.png" />
+</Frame>
+
+
+## Dokümanlar
+
+<table>
+  <caption><strong>Kaynaklar</strong></caption>
+  <tr>
+    <td>
+      <ul>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-arduino-core/raw/master/docs/DeneyapKart1A_GenisletilmisPinDiyagram%C4%B1_mpv2.0.png">Pin Diyagramı</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/PsDiYC9ZLLAAbIAa7VaUTmy7Xs2sSkmC.PDF">Teknik Resim</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-arduino-core">Github Arduino Kütüphanesi</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-platformio-core">Github PlatformIO Kütüphanesi</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-micropython-core">Github MicroPython Kütüphanesi</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-micropython-core/releases/download/1.0.0/micropython_examples.rar">MicroPython Örnek Kodlar</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media-v2/cke-uploads/2025/05/24/deneyap_kart_1a_v2.fzpz">Fritzing (.fzpz)</a></li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/itJA6rf7flvktYVDPY1pOs9SDiqftmiE.STEP">3B Model (.step)</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/0XK7E6ACLNezumnJ6GaaIZRzGCHypeFl.STL">3B Model (.stl)</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/G34ujrLfXA1g78UkgzW2VtJwDCNCVMFA.PDF">Şematik</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media-v2/cke-uploads/2024/10/24/dy1av2_detaylpinozellikleritablosu.pdf">Detaylı Pin Özellikleri</a></li>
+        <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf">ESP32-S3 Datasheet</a></li>
+        <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf">ESP32-S3-WROOM-1 Datasheet</a></li>
+        <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf">ESP32-S3 Teknik Rehber</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>

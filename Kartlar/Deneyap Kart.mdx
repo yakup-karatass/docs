@@ -1,0 +1,96 @@
+---
+title: "Deneyap Kart"
+---
+
+## Genel Bilgiler
+
+- Deneyap ailesinin çok yönlü ve güçlü elektronik geliştirme kartı, orjinal ESP32-WROVER-E modülü kullanılarak geliştirilmiştir.
+- Güçlü çift çekirdek Tensilica Xtensa LX6 mikroişlemcisi ile makine öğrenmesi ve yapay zeka tabanlı projelere Tensorflow Lite ile başlayabilirsiniz.
+- Dahili Wi-Fi ve Bluetooth haberleşme özellikleri sayesinde, nesnelerin interneti ve bulut tabanlı projeler hazırlamanızda sizlere imkan sağlayacaktır. Kullanılan cihaz özelinde bluetooth kütüphanesi kullanılmalıdır. [Bluetooth örnekleri için tıklayınız.](https://github.com/deneyapkart/deneyapkart-arduino-core/tree/master/libraries/Deneyap/examples/BLE) Deneyap Kart, Deneyap Kart1A, Deneyap Kart 1Av2 ve Deneyap Kart G karlarında ve Android, Apple ve Windows cihazlarında Deneyap Kart'ları bluetooth klavye olarak kullanabilirsiniz. [Örnek proje için tıklayınız.](https://deneyapkart.org/projeler/bluetooth-klavye-2)
+- Wi-Fi haberleşme özelliğini kullanarak sisteminiz ile bulut tabanlı uygulamanız arasında veri alışverişi gerçekleştirebilirsiniz. Bunun yanı sıra, Deneyap Kart’ınızı bir sunucu olarak kullanabilir ve bu sayede kendi kapalı çevrim kablosuz haberleşme ağınızı kurabilirsiniz.
+- Çift mod (Dual) Bluetooth özelliği ile hem BLE hem de Bluetooth EDR altyapısına sahip cihazlarla veri alışverişi gerçekleştirebilirsiniz. Deneyap Kart; akıllı ev, akıllı tarım, akıllı taşıtlar, mobil sağlık vb. alanlarda uygulamalar gerçekleştirebileceğiniz nesnelerin interneti projelerinde size büyük kolaylık sunmaktadır.
+- Deneyap Kart’ta dahili olarak yüksek hassasiyetli LSM6DSM algılayıcısı vardır. Bu algılayıcı ile 3-eksen ivme ve 3-eksen dönü ölçümü yapabilir ve sisteminizin sıcaklığını takip edebilirsiniz.
+- Deneyap Kart, MEMS teknolojisine sahip dahili MP34DT05 mikrofonu ile sadece çevredeki seslerin şiddetini algılamayla kalmaz; konuşma ve ses tanımlama uygulamaları yapmanıza imkan tanır.
+- ADC, DAC, UART, PWM, I2C, SPI, I2S, SD/SDIO/MMC, Kapasitif Algılama, TWAI, RMT, JTAG, Timer, darbe sayıcı ve harici kesme gibi zengin çevresel bağlantı yelpazesine sahiptir. Ayrıca size esneklik sağlamak amacıyla, bu bağlantı arayüzlerinden bir kısmı ihtiyacınıza göre istediğiniz herhangi bir pinden kullanılabilmektedir.
+- Mikroişlemciye entegre dahili manyetik alan algılayıcı bulunur. Cihazınıza bir mıknatıs yaklaştırıldığında ya da cihaz bir manyetik alan içine girdiğinde manyetik alan seviyesini ölçebilirsiniz.
+- 6-Eksen ataletsel ölçüm birimine entegre dahili sıcaklık algılayıcısı ile –40 °C ile +85 °C aralığında cihaz sıcaklığını takip edebilirsiniz.
+- Genel amaçlı olarak kullanılabilen 24 adet pine sahiptir. Bu pinlerden dijital giriş/çıkış olarak kullanılanlar aşırı akıma karşı PTC sigorta ile koruma altına alınmıştır.
+- Sisteminize güvenilir bir şekilde güç vermenize yardımcı olmak için özel bir Li-Po bağlantı konnektörü bulunmaktadır. Dahası bu bağlantı konnektörünü kullanarak Li-Po bataryanızı şarj edebilirsiniz.
+- Deneyap Kamera’yı doğrudan Deneyap Kart üzerindeki (FPC) konnektörüne bağlayabilirsiniz.
+- Ayrıca 2 adet buton ve 1 adet RGB LED dahili olarak bulunmaktadır.
+- I2C haberleşme konnektörünü kullanarak kablo bağlantısı ve lehimleme yapmadan algılayıcı ve eyleyici birimlerden oluşan sisteminizi hızlı bir şekilde hayata geçirebilirsiniz.
+- Deneyap Kart’tan kesintisiz olarak harici bağlantı sağlayacağınız çevre birimlerde kullanmak için 3.3V ve 5V gerilime sahip çıkış alabilirsiniz. Sisteminizi Li-Po batarya ile beslerken dahi 5V gerilime sahip güç çıkışı her zaman sizinle olacaktır.
+- Deneyap Kart devre tahtası (breadboard) ile uyumlu bir tasarıma sahiptir. Hemen geliştirmeye başlamanız için pinleri sizin için lehimlendi.
+- Deneyap Kart Arduino IDE ile uyumludur. Yönergeleri kullanarak kodlamaya başlayabilirsiniz.
+
+
+## Teknik Özellikler
+
+- 240 MHz Çift Çekirdek Tensilica LX6 Mikroişlemci
+- 520 KB SRAM
+- 448 KB ROM
+- 8 MB PSRAM
+- 4 MB SPI Flash
+- 2.4 GHz Wi-Fi – 802.11b/g/n
+- Bluetooth EDR ve BLE
+- Dahili PCB Anten
+- LSM6DSM ile 3-Eksen Dönüölçer ve 3-Eksen İvmeölçer  (I2C Adres: 0x6A)
+- MP34DT05 MEMS Mikrofon
+- Dahili Manyetik Alan Algılayıcı
+- Dahili Sıcaklık Algılayıcı
+- RGB LED (Pinler: RX, TX, SDA)
+- Genel Amaçlı Buton (Pin: GPKEY)
+- Li-Po Batarya Şarjı
+- Li-Po Batarya Konnektörü
+- USB Mikro-B
+- I2C Haberleşme Konnektörü
+- 24 x Dijital Giriş/Çıkış Pini
+- 16 x Analog Giriş Pini (12-bit ADC)
+- Tüm Dijital Giriş/Çıkış Pinleri; UART, SPI, I2C Haberleşme Arayüzlerini ve Harici Kesmeyi Destekler
+- Tüm Dijital Çıkış Pinleri için PWM Desteği
+- 3.3V Çalışma Gerilimi
+- 3.3V ve 5V Çıkış Gerilimi
+- 3.3 – 5.5V Giriş Gerilimi
+- 63.50mm x 25.4mm x 15.70mm
+- 11 gr (pinler lehimli)
+
+<Frame caption="Deneyap Kart 1A Pin Diyagramı">
+    <img classname="rounded-lg" src="/images/Deneyap-Kart-Pin-Diyagramı.png" />
+</Frame>
+
+## Dokümanlar
+
+<table>
+  <caption><strong>Kaynaklar</strong></caption>
+  <tr>
+    <td>
+      <ul>
+        <li><a href="https://raw.githubusercontent.com/deneyapkart/deneyapkart-arduino-core/master/docs/DeneyapKart_Geni%C5%9Fletilmi%C5%9FPinDiyagram%C4%B1_mpv1.0.png">Pin Diyagramı</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/NqjMEbvV2XUXk19JF68DzXA7H8Ok9Leo.pdf">Teknik Resim</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-arduino-core">Github Arduino Kütüphanesi</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-platformio-core">Github PlatformIO Kütüphanesi</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-micropython-core">Github MicroPython Kütüphanesi</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-micropython-core/releases/download/1.0.0/micropython_examples.rar">MicroPython Örnek Kodlar</a></li>
+        <li><a href="https://github.com/deneyapkart/fritzing-parts/raw/master/DeneyapKart.fzpz">Fritzing (.fzpz)</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-arduino-core/releases/download/1.0.0/deneyapkart_3D_mpv1.0.step">3B Model(.step)</a></li>
+        <li><a href="https://github.com/deneyapkart/deneyapkart-arduino-core/releases/download/1.0.0/deneyapkart_3D_mpv1.0.stl">3B Model(.stl)</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/o4evHI10wBVgIkWKeU8fmvKH9jmJw3tF.pdf">Şematik</a></li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><a href="https://cdn.deneyapkart.org/media-v2/cke-uploads/2024/05/30/dydk_detaylpinozellikleritablosu.pdf">Detaylı Pin Özellikleri</a></li>
+        <li><a href="https://cdn.deneyapkart.org/media/upload/userFormUpload/gkAlKFiPHMHhjvFTZBXHY7JLfoCJOuJY.pdf">Kullanıcı Kılavuzu</a></li>
+        <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf">ESP32 Datasheet</a></li>
+        <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf">ESP32-WROVER-E Datasheet</a></li>
+        <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf">ESP32 Teknik Rehber</a></li>
+        <li><a href="https://www.st.com/resource/en/datasheet/lsm6dsm.pdf">ST LSM6DSM Datasheet</a></li>
+        <li><a href="https://www.st.com/resource/en/datasheet/lsm6ds3tr-c.pdf">ST LSM6DS3TR-C Datasheet (Versiyon: mpv1.1 Tarih:19/05/2022)</a></li>
+        <li><a href="https://www.st.com/resource/en/datasheet/mp34dt05-a.pdf">ST MP34DT05-A Datasheet</a></li>
+        <li><a href="https://www.knowles.com/docs/default-source/model-downloads/spk0641ht4h-1-rev-a.pdf">Knowles SPK0641HT4H-1 Datasheet (Versiyon: mpv1.1 Tarih: 10/06/2023)</a></li>
+        <li><a href="https://assets.cree-led.com/a/ds/h/HB-UHD1110-FKA.pdf">CreeLED UHD1110-FKA Datasheet</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+

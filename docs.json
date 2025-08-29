@@ -1,127 +1,98 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "T3 Foundation - Deneyap Kart",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#D23526",
+    "light": "#E45824",
+    "dark": "#C82327"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/dklogo.svg",
+  "background": {
+    "decoration": "windows"
+  },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+        "group": "Başlangıç",
+        "pages": [
+          "Tanıtım",
+          "Hızlı Başlangıç",
+          "Geliştirme",
+          "T3 Akademi"
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "Geliştirme Kartları",
+        "pages": [
+          "Kartlar/Deneyap Kart",
+          "Kartlar/Deneyap Kart 1A",
+          "Kartlar/Deneyap Mini",
+          "Kartlar/Deneyap Kart G",
+          "Kartlar/Deneyap Kart 1A v2",
+          "Kartlar/Deneyap Mini v2"
+        ]
+      },
+      {
+        "group": "Projeler",
+        "pages": [
+          "essentials/Giriş",
+          "essentials/Başlangıç",
+          "essentials/Orta",
+          "essentials/İleri"
+        ]
+      },
+      {
+        "group": "Deneyap Kart IDE",
+        "pages": [
+          "IDE/Deneyap Kart IDE Nedir",
+          "IDE/Deneyap Kart IDE Kurulumu",
+          "IDE/Deneyap Kart IDE Tanıtımı",
+          "IDE/Deneyap Kart IDE Hatalar ve Çözümleri"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
+  },
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Documentation",
+        "href": "https://mintlify.com/docs",
+        "icon": "book-open-cover"
+      },
+      {
+        "anchor": "Community",
+        "href": "https://mintlify.com/community",
+        "icon": "slack"
+      },
+      {
+        "anchor": "Blog",
+        "href": "https://mintlify.com/blog",
+        "icon": "newspaper"
+      }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "light": "/logo/deneyap_kart_logo.png",
+    "dark": "/logo/deneyap_kart_logo.png"
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "instagram": "https://www.instagram.com/t3deneyapkart/",
+      "github": "https://github.com/deneyapkart",
+      "linkedin": "https://www.linkedin.com/company/deneyap-kart/posts/?feedView=all"
     }
   }
 }
